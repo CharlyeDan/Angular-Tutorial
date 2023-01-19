@@ -1,0 +1,12 @@
+<div *ngIf="isMessageAvailable" class="messages">
+    <ul class="padding-0">
+        <li *ngFor="let message of messages">
+            <div class="clear">
+                Message Incoming: {{ message }}
+                <button type="button" (click)="onClear(message)" class="toEnd">
+                    X
+                </button>
+            </div>
+        </li>
+    </ul>
+</div>
